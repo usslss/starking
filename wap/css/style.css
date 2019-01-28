@@ -1,0 +1,94 @@
+/* 排版样式 */
+body, form, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd, blockquote{ margin: 0; padding: 0; font-family:Microsoft YaHei;font-size:14px;}
+li{ list-style-type: none}
+img,button,input{ border: none}
+*{ font-family:Microsoft YaHei; margin: 0; padding: 0;}
+a {color: #666;text-decoration: none; -webkit-transition: all .2s linear;transition: all .2s linear;}
+textarea {resize: none;}
+img{max-width: 100%;display:block;}
+a:active, a:focus{text-decoration: none;outline: none;}
+/* 文本溢出 */
+.ellipsis{ text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden;  white-space: nowrap;}
+input, textarea, button, a {outline:0}
+
+.fl{  float:left;}
+.fr{  float:right;}
+
+.clearfix { clear:both; }
+.hidden {  display:none; }
+html,body{background:#fff;}
+.f-cb {zoom: 1;}
+.hide{display:none;}
+.layout{width:7.1rem;margin:0 auto;}
+
+/*header*/
+header{width:100%;box-sizing: border-box;position:absolute;top:0;height:1.6rem;z-index:999;}
+header .layout{width:6.7rem;margin:0 auto;position:relative;}
+header a.nav{display:block;width:0.5rem;height:0.4rem;position:absolute;top:0.6rem;left:0;}
+header a.nav img{width:0.5rem;height:0.4rem;}
+header a.logo{width:1.02rem;height:1rem;position:absolute;left:50%;margin-left: -0.51rem;top:0.3rem;}
+header a.logo img{width:1.02rem;height:1rem;}
+header a.tel{width:0.6rem;height:0.6rem;position:absolute;right:0;top:0.5rem;}
+header a.tel img{width:0.6rem;height:0.6rem;}
+header a.tel1{display:none;width:3.94rem;height:0.62rem;position:absolute;right:0;top:1.6rem;}
+header a.tel img{width:3.94rem;height:0.62rem;}
+header .xl-nav{display:none;width:100%;background:#e6e6e6;box-sizing: border-box;position:fixed;top:1.6rem;left:0;padding:0.6rem 0.4rem;}
+header .xl-nav li{width:100%;font-size:16px;margin-bottom: 0.4rem;position:relative;line-height: 16px;}
+header .xl-nav li:nth-child(4){margin-bottom: 0;}
+header .xl-nav li a{color:#151e45;}
+header .xl-nav li.active a{color:#cd9964;}
+header .xl-nav li.active:after{content: '';display:block;width:1rem;height:1px;background:#CD9964;position:absolute;right:0;top:12px;}
+
+.banner{position:relative;overflow: hidden;}
+.banner img{display:block;width:100%;}
+.banner .swiper-pagination-bullet{width:1.2rem;height:0.08rem;opacity: 0.3;border-radius: 0;background:#fff;}
+.banner .swiper-pagination-bullet-active{background:#fff;opacity: 1;}
+.banner .swiper-slide{position:relative;}
+
+/*产品介绍*/
+.cpjs{width:100%;background:url(../images/bg.jpg) no-repeat #151e45;padding:0.4rem 0;}
+.cpjs li{width:100%;}
+.cpjs li{height:3.4rem;margin-bottom: 0.3rem;}
+.cpjs li .img{width:3.2rem;height:3.4rem;}
+.cpjs li:nth-child(4){margin-bottom: 0;}
+
+/*介绍*/
+.jieshao{width:100%;background:#e6e6e6;padding:0.6rem 0 0.3rem 0;}
+.jieshao .title{display:block;width:6.45rem;height:0.46rem;margin:0 auto;}
+.jieshao ul{width:5.85rem;margin:0.6rem auto 0 auto;}
+.jieshao ul li{width:2.77rem;height:3.72rem;float:left;margin-bottom: 0.3rem;}
+.jieshao ul li img{width:2.77rem;height:3.72rem;}
+.jieshao ul li:nth-child(2n){float:right;}
+
+/*底部*/
+footer{width:100%;background:#151e45;padding:0.78rem 0 0.4rem 0;}
+footer .f-logo{display:block;width:2.1rem;height:1.93rem;margin:0 auto 0.4rem;}
+footer p{text-align:center;margin-bottom: 0.16rem;}
+footer p img{display:inline-block;}
+
+/*关于我们*/
+.about{width:100%;background:url(../images/bg.jpg) no-repeat #151e45;position:relative;box-sizing: border-box;height:7.52rem;z-index:12;}
+.about .wz{display:block;width:6.15rem;height:4.9rem;position:absolute;top:2.07rem;left:0.4rem;}
+.about .pic{display:block;width:7.07rem;height:7.73rem;position:absolute;top:-1.66rem;right:0.1rem;}
+
+.time{width:100%;}
+.time img{display:block;width:100%;}
+
+.bannerc{width:100%;}
+.bannerc img{display:block;width:100%;}
+
+.brand{width:100%;}
+.brand img{width:100%;}
+
+.join{width:100%;}
+.join img{width:100%;}
+
+.ly{width:100%;padding:1.2rem 0;background:#e5e5e5;text-align: center;}
+.ly p{margin-bottom: 0.4rem;}
+.ly input{display:block;width:6rem;height:0.8rem;background:#fff;box-sizing: border-box;margin:0 auto;text-align: center;font-size:12px;color:#151e45;margin-bottom: 0.3rem;}
+.ly textarea{display:block;width:6rem;height:1.6rem;background:#fff;box-sizing: border-box;margin:0 auto;text-align: center;font-size:12px;color:#151e45;margin-bottom: 0.3rem;border:none;line-height: 0.8rem;color:#999999;}
+.ly button{width:6rem;height:0.8rem;background:#151e45;text-align: center;line-height: 0.8rem;font-size:12px;color:#fff;}
+input::-webkit-input-placeholder{color:#999999;}
+input::-moz-placeholder{color:#999999;}
+input:-moz-placeholder{color:#999999;}
+input:-ms-input-placeholder{color:#999999;}
