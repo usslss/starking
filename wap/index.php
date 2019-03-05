@@ -1,3 +1,8 @@
+<?php
+include_once "../php/connect.php";
+$page = "index";
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +14,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta http-equiv="x-rim-auto-match" content="none" />
 		<meta name="format-detection" content="telephone=no" />
-		<title>星国王</title>
+		<?php include_once "php/keywords.php";?>
 		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -18,50 +23,9 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="layout">
-				<a href="javascript:void(0)" class="nav"><img src="images/nav.png"></a>
-				<a href="index.html" class="logo"><img src="images/logo.png"></a>
-				<a href="javascript:void(0)" class="tel"><img src="images/tel.png"></a>
-				<a href="tel:4000852375" class="tel1"><img src="images/tel1.png"></a>
-			</div>
-			<div class="xl-nav">
-				<ul>
-					<li class="active">
-						<a href="index.html">首页</a>
-					</li>
-					<li>
-						<a href="about.html">关于我们</a>
-					</li>
-					<li>
-						<a href="brand.html">品牌形象</a>
-					</li>
-					<li>
-						<a href="join.html">加入我们</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-		<script>
-			$(".tel").click(function() {
-				$(".tel1").fadeIn();
-			});
-			$(document).mousedown(function(e) {
-				var _con = $(".tel1");
-				if(!_con.is(e.target) && _con.has(e.target).length === 0) {
-					$(".tel1").hide();
-				}
-			});
-			$(".nav").click(function() {
-				$(".xl-nav").fadeIn();
-			});
-			$(document).mousedown(function(e) {
-				var _con = $(".xl-nav");
-				if(!_con.is(e.target) && _con.has(e.target).length === 0) {
-					$(".xl-nav").hide();
-				}
-			});
-		</script>
+		<!-- header -->
+		<?php include_once "php/header.php";?>
+
 		<!-- Swiper -->
 		<div class="swiper-container banner">
 			<div class="swiper-wrapper">
@@ -126,13 +90,13 @@
 			</ul>
 		</div>
 		
-		<footer>
-			<img src="images/footer-logo.png" class="f-logo">
-			<p><img src="images/banquan.png"></p>
-			<p><img src="images/beian.png"></p>
-			<p><img src="images/tishi.png"></p>
-		</footer>
+		<!--footer-->
+		<?php include_once "php/footer.php";?>
 
 	</body>
 
 </html>
+
+<?php
+mysqli_close($link);
+?>

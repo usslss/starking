@@ -1,3 +1,8 @@
+<?php
+include_once "../php/connect.php";
+$page = "join";
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +14,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta http-equiv="x-rim-auto-match" content="none" />
 		<meta name="format-detection" content="telephone=no" />
-		<title>星国王</title>
+		<?php include_once "php/keywords.php";?>
 		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -18,30 +23,9 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="layout">
-				<a href="javascript:void(0)" class="nav"><img src="images/nav.png"></a>
-				<a href="index.html" class="logo"><img src="images/logo.png"></a>
-				<a href="javascript:void(0)" class="tel"><img src="images/tel.png"></a>
-				<a href="tel:4000852375" class="tel1"><img src="images/tel1.png"></a>
-			</div>
-			<div class="xl-nav">
-				<ul>
-					<li >
-						<a href="index.html">首页</a>
-					</li>
-					<li >
-						<a href="about.html">关于我们</a>
-					</li>
-					<li class="active">
-						<a href="brand.html">品牌形象</a>
-					</li>
-					<li>
-						<a href="join.html">加入我们</a>
-					</li>
-				</ul>
-			</div>
-		</header>
+		<!-- header -->
+		<?php include_once "php/header.php";?>
+
 		<script>
 			$(".tel").click(function() {
 				$(".tel1").fadeIn();
@@ -73,24 +57,40 @@
 		<div class="ly">
 			<p><img src="images/ly1.png" style="width:6.77rem;height:0.67rem;margin:0 auto;"></p>
 			<p ><img src="images/ly2.png" style="width:4.33rem;height:0.2rem;margin:0 auto;"></p>
-			<input type="text" placeholder="请输入您的姓名" />
-			<input type="text" placeholder="请输入您的联系方式" />
-			<textarea id="t1"></textarea>
-			<button>提交留言</button>
+			<form id="msgform">
+			<input type="text" name="name" placeholder="请输入您的姓名" />
+			<input type="text" name="phone" placeholder="请输入您的联系方式" />
+			<textarea id="t1" name="content"></textarea>
+			<a href="javascript:void()" class="tj" id="msg">提交留言</a>
+			</form>
 			<script>
-				document.getElementById("t1").value = "你想了解加盟费用?还是对加盟流程有问题?"
+				document.getElementById("t1").value = "你想了解加盟费用?还是对加盟流程有问题?"		
+				
+				//留言
+				$(function () {
+					$("#msg").click(function () {
+						var cont1 = $("#msgform").serialize();
+						$.ajax({
+							url: 'php/msg.php',
+							type: 'post',
+							dataType: 'text',
+							data: cont1,
+							success: function (result) {
+								alert(result);
+							}
+						});
+					});
+				});
 			</script>
 		</div>
 		
-		
-		
-		<footer>
-			<img src="images/footer-logo.png" class="f-logo">
-			<p><img src="images/banquan.png"></p>
-			<p><img src="images/beian.png"></p>
-			<p><img src="images/tishi.png"></p>
-		</footer>
+		<!--footer-->
+		<?php include_once "php/footer.php";?>
 
 	</body>
 
 </html>
+
+<?php
+mysqli_close($link);
+?>
