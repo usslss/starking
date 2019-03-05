@@ -16,7 +16,7 @@ if ($page=='join'){$class_join='class="active"';};
 	<!-- WAPtoPC 适配JS脚本 -->
 	<script>
         if(!(/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
-            window.location.href = 'http://www.sky-whale.net/';
+            window.location.href = 'http://www.starkingscoffee.com/';
         }
     </script>
 
