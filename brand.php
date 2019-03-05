@@ -26,16 +26,16 @@ $page = "brand";
 		</div>
 		
 		<div class="brand">
-			<img src="images/brand_01.png">
-			<img src="images/brand_02.png">
-			<img src="images/brand_03.png">
-			<img src="images/brand_04.png">
-			<img src="images/brand_05.png">
-			<img src="images/brand_06.png">
-			<img src="images/brand_07.png">
-			<img src="images/brand_08.png">
-			<img src="images/brand_09.png">
-			<img src="images/brand_10.png">
+			<img src="images/brand_01.jpg">
+			<img src="images/brand_02.jpg">
+			<img src="images/brand_03.jpg">
+			<img src="images/brand_04.jpg">
+			<img src="images/brand_05.jpg">
+			<img src="images/brand_06.jpg">
+			<img src="images/brand_07.jpg">
+			<img src="images/brand_08.jpg">
+			<img src="images/brand_09.jpg">
+			<img src="images/brand_10.jpg">
 			
 		</div>
 
