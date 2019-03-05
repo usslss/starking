@@ -6,11 +6,11 @@ $class_product='';
 $class_brand='';
 $class_join='';
 
-if ($page=='index'){$class_index="active";};
-if ($page=='about'){$class_about="active";};
-if ($page=='product'){$class_product="product";};
-if ($page=='brand'){$class_brand="active";};
-if ($page=='join'){$class_join="active";};
+if ($page=='index'){$class_index='class="active"';};
+if ($page=='about'){$class_about='class="active"';};
+if ($page=='product'){$class_product='class="active"';};
+if ($page=='brand'){$class_brand='class="active"';};
+if ($page=='join'){$class_join='class="active"';};
 
 ?>
 <!-- 移动适配JS脚本 -->
@@ -34,6 +34,7 @@ if ($page=='join'){$class_join="active";};
     }
 </script>
  --> 
+ 
 		<div class="header">
 			<div class="w-1200">
 				<div class="logo fl">
@@ -41,31 +42,31 @@ if ($page=='join'){$class_join="active";};
 				</div>
 				<div class="nav fr">
 					<ul>
-						<li class="<?php echo $class_index;?>">
+						<li <?php echo $class_index;?>>
 							<a href="index.php">
 								<img src="images/header-nav1.png" class="xs" alt="星国王，首页">
 								<img src="images/header-nav1-1.png" class="yc" alt="星国王，首页">
 							</a>
 						</li>
-						<li class="<?php echo $class_about;?>">
+						<li <?php echo $class_about;?>>
 							<a href="about.php">
 								<img src="images/header-nav2.png" class="xs" alt="星国王，关于我们">
 								<img src="images/header-nav2-1.png" class="yc" alt="星国王，关于我们">
 							</a>
 						</li>
-						<li class="<?php echo $class_product;?>">
+						<li <?php echo $class_product;?>>
 							<a href="product.php">
 								<img src="images/header-nav5.png" class="xs" alt="星国王，品牌形象">
 								<img src="images/header-nav5-1.png" class="yc" alt="星国王，品牌形象">
 							</a>
 						</li>
-						<li class="<?php echo $class_brand;?>">
+						<li <?php echo $class_brand;?>>
 							<a href="brand.php">
 								<img src="images/header-nav3.png" class="xs" alt="星国王，品牌形象">
 								<img src="images/header-nav3-1.png" class="yc" alt="星国王，品牌形象">
 							</a>
 						</li>
-						<li class="<?php echo $class_join;?>">
+						<li <?php echo $class_join;?>>
 							<a href="join.php">
 								<img src="images/header-nav4.png" class="xs" alt="星国王，加入我们">
 								<img src="images/header-nav4-1.png" class="yc" alt="星国王，加入我们">

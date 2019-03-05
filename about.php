@@ -14,26 +14,6 @@ $page = "about";
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<script type="text/javascript" src="js/backtop.js"></script>
-		<script type="text/javascript">
-			if(window.location.toString().indexOf('pref=padindex') != -1) {} else {
-				if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator
-						.userAgent) || (
-						/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/
-						.test(navigator.userAgent))) {
-					if(window.location.href.indexOf("?mobile") < 0) {
-						try {
-							if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-								window.location.href = "/wap/";
-							} else if(/iPad/i.test(navigator.userAgent)) {
-								//window.location.href="/wap/"
-							} else {
-								window.location.href = "/wap/"
-							}
-						} catch(e) {}
-					}
-				}
-			}
-		</script>
 	</head>
 
 	<body>
@@ -69,75 +49,9 @@ $page = "about";
 		<div class="time">
 			<img src="images/time.jpg" alt="国王时刻">
 		</div>
-		
-		<div class="news">
-			<div class="title">
-				<img src="images/news-title.png">
-			</div>
-			<ul>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<li>
-					<a href="">
-						2019咖啡行业如何发展，星国王咖啡为你探寻
-					</a>
-					<span>02/27</span>
-				</li>
-				<div class="clearfix"></div>
-			</ul>
-		</div>
+
+		<!--news-->
+		<?php include_once "php/about/news_list.php";?>		
 
 		<!--footer-->
 		<?php include_once "php/footer.php";?>

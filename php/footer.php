@@ -2,31 +2,31 @@
 			<div class="w-1200">
 				<img src="images/footer-logo.png" class="f-logo" alt="星国王，底部logo">
 				<ul>
-					<li class="<?php echo $class_index;?>">
+					<li <?php echo $class_index;?>>
 						<a href="/">
 							<img src="images/foot-nav1.png" class="xs" alt="星国王，首页">
 							<img src="images/foot-nav1-1.png" class="yc" alt="星国王，首页">
 						</a>
 					</li>
-					<li class="<?php echo $class_about;?>">
+					<li <?php echo $class_about;?>>
 						<a href="/about/">
 							<img src="images/foot-nav2.png" class="xs" alt="星国王，关于我们">
 							<img src="images/foot-nav2-1.png" class="yc" alt="星国王，关于我们">
 						</a>
 					</li>
-					<li class="<?php echo $class_product;?>">
+					<li <?php echo $class_product;?>>
 						<a href="/product/">
 							<img src="images/foot-nav5.png" class="xs" alt="星国王，品牌形象">
 							<img src="images/foot-nav5-1.png" class="yc" alt="星国王，品牌形象">
 						</a>
 					</li>
-					<li class="<?php echo $class_brand;?>">
+					<li <?php echo $class_brand;?>>
 						<a href="/brand/">
 							<img src="images/foot-nav3.png" class="xs" alt="星国王，品牌形象">
 							<img src="images/foot-nav3-1.png" class="yc" alt="星国王，品牌形象">
 						</a>
 					</li>
-					<li class="<?php echo $class_join;?>">
+					<li <?php echo $class_join;?>>
 						<a href="/join/">
 							<img src="images/foot-nav4.png" class="xs" alt="星国王，加入我们">
 							<img src="images/foot-nav4-1.png" class="yc" alt="星国王，加入我们">
