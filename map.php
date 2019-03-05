@@ -43,9 +43,9 @@ $page = "index";
 
 
 						<dl>
-							<dt>产品商店 _</dt>
+							<dt>产品展示 _</dt>
 							<dd>
-								<a title="产品商店" href="http://www.starkingscoffee.com/product/">产品商店</a>
+								<a title="产品展示" href="http://www.starkingscoffee.com/product/">产品展示</a>
 							</dd>
 						</dl>
 						<dl>

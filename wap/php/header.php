@@ -36,7 +36,7 @@ if ($page=='join'){$class_join='class="active"';};
 						<a href="about.php">品牌概况</a>
 					</li>
 					<li <?php echo $class_product;?>>
-						<a href="product.php">产品商店</a>
+						<a href="product.php">产品展示</a>
 					</li>
 					<li <?php echo $class_brand;?>>
 						<a href="brand.php">品牌形象</a>
