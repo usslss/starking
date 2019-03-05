@@ -161,3 +161,21 @@ input:-ms-input-placeholder{color:#999999;}
 .news-show .tjxw ul li .word h3{font-weight: normal;color:#000000;font-size:16px;height:16px; line-height: 16px; overflow: hidden;margin:10px 0;}
 .news-show .tjxw ul li .word p{color:#8a8a8a;font-size:14px;line-height: 24px;height:72px; overflow: hidden;}
 .news-show .tjxw a.zk{display: block;width:30px;height:32px; margin:20px auto; cursor: pointer;}
+
+.news-show .map{width:1200px;}
+.news-show .map h1{border-bottom: 1px solid #8b8075;text-align: center;font-size:24px;line-height: 36px;color:#8B8075;padding-bottom: 24px;}
+.news-show .map .mbx{margin:22px 0 0 0;text-align: center;line-height: 16px;height:16px;color:#8a8a8a;}
+.news-show .map .mbx a{color:#8a8a8a;font-size:16px;display:inline-block;padding:0 27px;}
+.news-show .map .mbx a.active,.news-show .map .mbx a:hover{color:#000;}
+.news-show .map .zw{margin:70px 0;}
+.news-show .map .zw p{font-size:16px;line-height: 36px;color:#8a8a8a;text-indent: 2em;margin-bottom: 20px;}
+.news-show .map .zw p b{color:#000;}
+.news-show .map .zw img{max-width: 100%;}
+
+/*网站地图*/
+.miaocafe_sitemap{margin-bottom:0;}
+.sitemap{width:1040px;margin:60px auto 0;}
+.sitemap dl{float:left;width:330px;height:180px;}
+.sitemap dt{color:#666666;font-size:20px;line-height:20px;margin-bottom:30px;font-weight: bold;}
+.sitemap dd a{display:inline-block;color:#666;font-size:14px;margin-bottom:20px;margin-right:40px;}
+.sitemap dd a:hover{color:#e99313;}

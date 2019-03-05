@@ -34,7 +34,7 @@
 					</li>
 					<div class="clearfix"></div>
 				</ul>
-				<p style="color:white;font: size 30;">&copy; 2019 &nbsp;星国王咖啡 www.xingguowang.net 星国王版权所有</p>
+				<p style="color:white;font: size 30;">&copy; 2019 &nbsp;星国王咖啡 www.xingguowang.net 星国王版权所有<a style="color:white;font: size 30;" href="/map.html"> 网站地图</a></p>				
 				<p style="color:white;font: size 30">浙ICP备18055590号-3</p>
 				<p style="color:white;font: size 30">星国王温馨提示您:投资有风险,选择需谨慎</p>
 			</div>
