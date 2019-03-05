@@ -1,9 +1,14 @@
+<?php
+include_once "php/connect.php";
+$page = "index";
+?>
+
 <!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
-		<title>星国王</title>
+		<?php include_once "php/keywords.php";?>
 		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -12,46 +17,9 @@
 	</head>
 
 	<body>
+		<!-- header -->
+		<?php include_once "php/header.php";?>
 
-		<div class="header">
-			<div class="w-1200">
-				<div class="logo fl">
-					<a href="index.html"><img src="images/logo.png"></a>
-				</div>
-				<div class="nav fr">
-					<ul>
-						<li class="active">
-							<a href="index.html">
-								<img src="images/header-nav1.png" class="xs" alt="星国王，首页">
-								<img src="images/header-nav1-1.png" class="yc" alt="星国王，首页">
-							</a>
-						</li>
-						<li>
-							<a href="about.html">
-								<img src="images/header-nav2.png" class="xs" alt="星国王，关于我们">
-								<img src="images/header-nav2-1.png" class="yc" alt="星国王，关于我们">
-							</a>
-						</li>
-						<li>
-							<a href="brand.html">
-								<img src="images/header-nav3.png" class="xs" alt="星国王，品牌形象">
-								<img src="images/header-nav3-1.png" class="yc" alt="星国王，品牌形象">
-							</a>
-						</li>
-						<li>
-							<a href="join.html">
-								<img src="images/header-nav4.png" class="xs" alt="星国王，加入我们">
-								<img src="images/header-nav4-1.png" class="yc" alt="星国王，加入我们">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tel">
-					<img src="images/tel.png" alt="星国王，电话">
-					<img src="images/tel1.png" class="xs" alt="星国王，加盟电话：400-085-2375">
-				</div>
-			</div>
-		</div>
 		<!-- Swiper -->
 		<div class="swiper-container banner">
 			<div class="swiper-wrapper">
@@ -121,41 +89,8 @@
 			</div>
 		</div>
 
-		<div class="footer">
-			<div class="w-1200">
-				<img src="images/footer-logo.png" class="f-logo" alt="星国王，底部logo">
-				<ul>
-					<li class="active">
-						<a href="index.html">
-							<img src="images/foot-nav1.png" class="xs" alt="星国王，首页">
-							<img src="images/foot-nav1-1.png" class="yc" alt="星国王，首页">
-						</a>
-					</li>
-					<li>
-						<a href="about.html">
-							<img src="images/foot-nav2.png" class="xs" alt="星国王，关于我们">
-							<img src="images/foot-nav2-1.png" class="yc" alt="星国王，关于我们">
-						</a>
-					</li>
-					<li>
-						<a href="brand.html">
-							<img src="images/foot-nav3.png" class="xs" alt="星国王，品牌形象">
-							<img src="images/foot-nav3-1.png" class="yc" alt="星国王，品牌形象">
-						</a>
-					</li>
-					<li>
-						<a href="join.html">
-							<img src="images/foot-nav4.png" class="xs" alt="星国王，加入我们">
-							<img src="images/foot-nav4-1.png" class="yc" alt="星国王，加入我们">
-						</a>
-					</li>
-					<div class="clearfix"></div>
-				</ul>
-				<p><img src="images/banquan.png" alt="星国王，Starkings Coffee 2019"></p>
-				<p><img src="images/beian.png" alt="星国王，浙公网安备 33010002000078号 "></p>
-				<p><img src="images/tishi.png" alt="星国王温馨提示您:投资有风险,选择需谨慎"></p>
-			</div>
-		</div>
+		<!--footer-->
+		<?php include_once "php/footer.php";?>
 
 		<div id="goToTop">
 			<a href="javascript:;"><img src="images/top.png"></a>
@@ -164,3 +99,7 @@
 	</body>
 
 </html>
+
+<?php
+mysqli_close($link);
+?>
