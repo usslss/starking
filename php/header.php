@@ -13,8 +13,7 @@ if ($page=='brand'){$class_brand='class="active"';};
 if ($page=='join'){$class_join='class="active"';};
 
 ?>
-<!-- 移动适配JS脚本 -->
-<!-- 
+	<!-- 移动适配JS脚本 -->
 	<script type="text/javascript">
     if (window.location.toString().indexOf('pref=padindex') != -1) {
     } else {
@@ -32,8 +31,8 @@ if ($page=='join'){$class_join='class="active"';};
             }
         }
     }
-</script>
- --> 
+	</script>
+
  
 		<div class="header">
 			<div class="w-1200">
